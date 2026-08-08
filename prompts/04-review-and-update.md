@@ -1,0 +1,23 @@
+# Review evidence and update the system
+
+```text
+Review the latest report, decision log, and benchmark observations before changing the system.
+
+Separate machine observations, user confirmations, public-source facts, inferences, and unverified claims. Do not rewrite prior observations to make a later result look better.
+
+For each rule or prompt change, show:
+
+- the advice or evidence that motivated the change
+- the operator's decision
+- the exact failure or risk the change addresses
+- the smallest files or rules that need to change
+- a counterexample that could make the new rule harmful
+- the test, dry render, or readback that will verify it
+- the date and next review condition
+
+Pay special attention to momentum exhaustion. A large one-day move that dominates the positive five-day return is an outlier warning, not a strength score. Keep company-specific catalysts separate from price momentum and require a catalyst for an individual-stock thesis.
+
+Check performance integrity: one benchmark, one baseline, same dates, same cash-flow treatment, costs, drawdown, downside capture, and data freshness. If the baseline is missing, keep the claim unverified.
+
+Check action integrity: no unmatched sells, no buys funded by unsettled proceeds, no unverified platform availability, and no external action without explicit authorization. Run the validator and a dry report after approved changes. Record failed ideas rather than deleting them.
+```

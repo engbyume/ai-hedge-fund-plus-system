@@ -1,0 +1,48 @@
+# Copy to private runtime/profile.yml and fill in deliberately.
+# Null means the operator must answer before measurement or external action.
+
+benchmark:
+  name: S&P 500
+  proxy_ticker: SPY
+  start_date: null
+  measurement: time_weighted_return
+  failure_review_date: null
+  include_dividends: true
+  include_costs: true
+
+objective:
+  bull_market: roughly_match_benchmark
+  bear_market: beat_benchmark
+  acceptable_volatility: high
+  desired_outcome: high_highs_high_lows
+  fallback_if_failed: review_or_return_to_benchmark
+
+portfolio:
+  weights: []
+  max_sector_weight: null
+  max_single_position_weight: null
+  rebalance_trigger_pp: 2
+  cash_reserve_pct: null
+  max_drawdown_tolerance_pct: null
+
+operation:
+  schedule_timezone: America/Chicago
+  daily_review: null
+  weekly_review: null
+  send_time: null
+  delivery: none
+  retention_days: null
+
+safety:
+  live_trading: false
+  external_send: false
+  require_settlement: true
+  require_platform_availability: true
+  require_user_confirmation: true
+  allow_automatic_rebalance: false
+
+models:
+  chronos: optional
+  timesfm: optional
+  kronos: optional
+  fallback: documented_baseline

@@ -1,0 +1,16 @@
+date,period,portfolio_return_pct,benchmark_return_pct,spread_pp,market_direction,evidence_type,baseline_status,notes
+2026-07-18,day,-0.32,-0.99,0.67,down,machine_observed,trial_start_reported_not_archived,First independently archived checkpoint
+2026-07-18,week,0.08,0.21,-0.13,up,machine_observed,trial_start_reported_not_archived,First independently archived checkpoint
+2026-07-18,month,1.26,-0.46,1.72,down,machine_observed,trial_start_reported_not_archived,Month spread positive while benchmark was down
+2026-07-22,day,0.38,-0.12,0.50,down,machine_observed,trial_start_reported_not_archived,Short checkpoint
+2026-07-22,week,0.40,0.83,-0.43,up,machine_observed,trial_start_reported_not_archived,Short checkpoint
+2026-07-22,month,1.79,1.89,-0.10,up,machine_observed,trial_start_reported_not_archived,Near benchmark
+2026-07-30,day,0.38,0.00,0.38,flat,machine_observed,trial_start_reported_not_archived,Neutral or low-information checkpoint
+2026-07-30,week,0.00,0.00,0.00,flat,machine_observed,trial_start_reported_not_archived,Neutral or low-information checkpoint
+2026-07-30,month,0.00,0.00,0.00,flat,machine_observed,trial_start_reported_not_archived,Neutral or low-information checkpoint
+2026-08-03,day,0.38,0.72,-0.34,up,machine_observed,trial_start_reported_not_archived,Portfolio lagged daily benchmark
+2026-08-03,week,-0.03,0.35,-0.38,up,machine_observed,trial_start_reported_not_archived,Portfolio lagged weekly benchmark
+2026-08-03,month,-0.35,-0.57,0.22,down,machine_observed,trial_start_reported_not_archived,Small positive month spread
+2026-08-05,day,0.38,-0.20,0.58,down,machine_observed,trial_start_reported_not_archived,Portfolio held up on the day
+2026-08-05,week,1.40,1.80,-0.40,up,machine_observed,trial_start_reported_not_archived,Portfolio lagged weekly benchmark
+2026-08-05,month,1.81,2.95,-1.14,up,machine_observed,trial_start_reported_not_archived,Latest archived checkpoint shows no consistent edge

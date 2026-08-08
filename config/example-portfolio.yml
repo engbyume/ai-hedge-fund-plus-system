@@ -1,0 +1,13 @@
+# Non-personal portfolio schema. Replace with preferences in private runtime.
+
+account_scope: paper
+positions: []
+target_weights: []
+sector_limits: []
+cash_policy:
+  minimum_pct: null
+  settlement_required: true
+actions:
+  pair_sells_with_buys: true
+  unmatched_sell_policy: block
+  watchlist_is_trade_instruction: false
