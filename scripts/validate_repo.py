@@ -64,6 +64,8 @@ FORBIDDEN_PATTERNS = [
     re.compile(r"(?i)jiscool231@gmail\.com"),
 ]
 
+RETIRED_FORECAST_TERMS = ("chrono" + "s", "times" + "fm")
+
 
 def read_text(path: Path) -> str:
     return path.read_text(encoding="utf-8")
@@ -92,6 +94,10 @@ def check_public_text(errors: list[str]) -> None:
         for pattern in FORBIDDEN_PATTERNS:
             if pattern.search(content):
                 errors.append(f"private path or identity pattern in {relative}: {pattern.pattern}")
+        lower_content = content.lower()
+        for term in RETIRED_FORECAST_TERMS:
+            if term in lower_content:
+                errors.append(f"retired forecast reference in {relative}")
 
 
 def check_links(errors: list[str]) -> None:
@@ -102,7 +108,7 @@ def check_links(errors: list[str]) -> None:
     if re.search(r"(?<!https:)//", text):
         errors.append("integrations/tools.md contains a non-HTTPS URL")
     urls = re.findall(r"https?://[^\s|)]+", text)
-    if len(urls) < 10:
+    if len(urls) < 6:
         errors.append("integrations/tools.md has too few public links")
     if any(url.startswith("http://") for url in urls):
         errors.append("all integration URLs must use HTTPS")
@@ -140,7 +146,7 @@ def check_readme(errors: list[str]) -> None:
     if not path.is_file():
         return
     text = read_text(path).lower()
-    for term in ("purpose", "evidence", "public", "private", "install", "not financial advice", "chronos", "timesfm", "kronos"):
+    for term in ("purpose", "evidence", "public", "private", "install", "not financial advice", "kronos"):
         if term not in text:
             errors.append(f"README is missing required concept: {term}")
     if "ai-hedge-fund-plus-system" not in text:

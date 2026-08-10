@@ -7,7 +7,7 @@ public sources
     -> source register and context package
     -> operator preference intake
     -> universe and catalyst research
-    -> Chronos / TimesFM / Kronos optional forecasts
+    -> Kronos forecast evidence with deterministic fallback
     -> exhaustion, insider, macro, availability, and overlap gates
     -> benchmark-normalized portfolio brief
     -> operator decision and action state

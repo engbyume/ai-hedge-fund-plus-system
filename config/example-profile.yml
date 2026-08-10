@@ -42,7 +42,5 @@ safety:
   allow_automatic_rebalance: false
 
 models:
-  chronos: optional
-  timesfm: optional
   kronos: optional
   fallback: documented_baseline

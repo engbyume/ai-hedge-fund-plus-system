@@ -1,6 +1,6 @@
 ---
 name: atlan-scale
-description: Build and operate a personal, versioned context repository for catalyst-aware portfolio research, optional forecasting models, benchmark measurement, and approval-gated reporting.
+description: Build and operate a personal, versioned context repository for catalyst-aware portfolio research, Kronos forecast evidence, benchmark measurement, and approval-gated reporting.
 ---
 
 # Personal Atlan Scale
@@ -66,7 +66,7 @@ Reject a weekly replacement candidate when its largest positive day contributes 
 
 ## Forecast model policy
 
-Chronos, TimesFM, and Kronos are optional evidence providers. Record versions, inputs, seeds, and missing-data behavior. Use a documented baseline if a model cannot run. Never fabricate an output to fill a missing field, and never turn model confidence into trade authorization.
+Kronos is optional evidence. Record its version, inputs, seed, and missing-data behavior. Use a documented baseline if it cannot run. Never fabricate an output to fill a missing field, and never turn model confidence into trade authorization.
 
 ## Benchmark and evidence policy
 

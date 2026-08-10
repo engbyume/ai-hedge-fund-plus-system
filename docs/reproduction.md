@@ -19,7 +19,7 @@ Give an AI agent [`prompts/02-configure-your-experiment.md`](../prompts/02-confi
 
 ## 3. Install optional components
 
-Use [`prompts/01-install-and-verify.md`](../prompts/01-install-and-verify.md). The agent must inspect the current host, Python version, GPU availability, package manager, and licensing before installing anything. Chronos, TimesFM, and Kronos are optional. A missing model must produce a labeled fallback, not a fabricated forecast.
+Use [`prompts/01-install-and-verify.md`](../prompts/01-install-and-verify.md). The agent must inspect the current host, Python version, GPU availability, package manager, and licensing before installing anything. Kronos is optional. A missing model must produce a labeled fallback, not a fabricated forecast.
 
 ## 4. Produce a dry report
 

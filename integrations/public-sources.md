@@ -3,11 +3,10 @@
 | Source | Why it matters | How it is used |
 | --- | --- | --- |
 | Agent Skills specification | Defines the portable skill boundary | The repository exposes `skills/atlan-scale/SKILL.md` |
-| Atlan public documentation | Describes catalog and context-layer concepts | Provides inspiration and attribution, not code dependency |
-| Chronos paper and repository | Documents a public time-series model | Optional forecast component |
-| TimesFM repository | Documents a public time-series model | Optional forecast component |
-| Kronos repository | Documents a public financial model | Optional market forecast component |
+| Kronos repository | Documents the public financial model used by the private runtime when available | Forecast evidence with a deterministic fallback |
 | Upstream AI Hedge Fund | Demonstrates a public multi-agent research project | Reference for agent roles and research composition |
-| GitHub Actions documentation | Defines hosted validation workflows | Optional CI for public files only |
+| yfinance repository | Documents the market-data adapter used by the private runtime | Current market history and price readback |
+| SnapTrade | Documents the broker readback provider used by the private runtime | Fidelity holdings and cash readback |
+| AgentMail | Documents the delivery provider used by the private runtime when enabled | Report delivery only |
 
 All live market, company, account, and provider data must be sourced and dated at runtime. Static links do not make current data current.

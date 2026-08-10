@@ -66,3 +66,12 @@ This log records what the system advised, what Jeremy chose, why the system chan
 - System change: update the private holdings source's confirmation date and preserve SNOW as a value-pending holding while retaining DXCM as unbought.
 - Verification: the canonical JSON parses, the generator reads that file as its Cash App source of truth, and the next report is expected to show SNOW as held rather than as a new candidate.
 - Unproven: SNOW's cost basis, current value, sale proceeds, and realized performance.
+
+## 2026-08-10 - Daily benchmark refresh and one-held-stock watchlist correction
+
+- Advice received: refresh Fidelity versus SPY from current market-close data every report, keep the pending contribution outside buying power until Jeremy confirms arrival, always show ETF coverage, and compare individual-stock candidates against SNOW without retaining the weaker YUMC idea.
+- Jeremy's decision: expect a Fidelity contribution during the current week but do not treat it as landed; require one SNOW replacement candidate and one better future-add candidate while keeping all proposed sells paired with buys or an approved proceeds hold.
+- System change: daily, weekly, monthly, and all-time open-position benchmark fields now use fresh report calculations; ETF coverage falls back to three standalone ETF reviews when no replacement gate fails; the Cash App stock ranking requires both forecast horizons to beat the held baseline and excludes YUMC.
+- Verification: the 2026-08-10 report measured Fidelity at +0.30% for the day, +2.13% for the latest five-session week, +2.49% for the latest 21-session month, and +4.09% open-position since 2026-06-12, versus SPY at +0.61%, +3.51%, +2.87%, and +4.25%. The report used market closes through 2026-08-07 and was dry-rendered without delivery.
+- Current watchlist result: GWRE is the SNOW replacement comparison and VEEV is the better future-add comparison. Official company releases provide the catalyst context, while forecasts remain model evidence rather than realized performance.
+- Unproven: the pending contribution date, current cost basis, realized proceeds, and whether either watchlist candidate will outperform after availability, costs, and execution constraints.

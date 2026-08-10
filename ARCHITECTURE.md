@@ -4,10 +4,10 @@
 
 | Layer | Responsibility | Public or private |
 | --- | --- | --- |
-| Sources | Public skills, model repositories, market-data documentation, operator-approved research | Mixed, with private credentials excluded |
+| Sources | Public skills, the Kronos repository, market-data documentation, operator-approved research | Mixed, with private credentials excluded |
 | Context repo | Versioned source register, preferences, decision rules, model notes, evidence, and change log | Public template; private runtime values local |
 | Research | Universe construction, catalyst research, technical context, insider and macro checks | Public method; live inputs may be private or licensed |
-| Forecasting | Optional Chronos, TimesFM, and Kronos forecasts with deterministic metadata | Public interface; weights and data may vary |
+| Forecasting | Kronos forecast evidence with deterministic fallback metadata | Public interface; weights and data may vary |
 | Risk gates | Breadth, exhaustion, sector overlap, availability, countercase, invalidation, and settlement checks | Public rules |
 | Portfolio layer | Benchmark-normalized returns, target weights, cash policy, and paired action plan | Public schema; account values private |
 | Delivery | Dry-run report, local artifact, optional email or scheduler | Public procedure; credentials and recipients private |

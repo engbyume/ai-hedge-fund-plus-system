@@ -1,10 +1,10 @@
 # Progress narrative
 
-## Status as of 2026-08-08
+## Status as of 2026-08-10
 
-The latest independently archived machine observation is the 2026-08-05 market-close report. The experiment's own report text says a two-month trial began on 2026-07-11, but a separately archived 2026-07-11 baseline is not present in the public evidence. Therefore the cumulative result from the stated start date cannot be independently verified here.
+The latest redacted machine observation is the 2026-08-10 report, using market closes through 2026-08-07. The experiment's own report text says a two-month trial began on 2026-07-11, but a separately archived 2026-07-11 baseline is not present in the public evidence. The all-time figure is therefore an open-position comparison from the first confirmed position date, not a verified trial-start result.
 
-Jeremy believes the portfolio may be about 3% ahead of the S&P since the start. That is retained as a user-reported hypothesis, not a measured claim. The latest archived month spread is -1.14 percentage points versus SPY, so the available evidence does not support saying that the system is consistently beating the benchmark.
+Jeremy believes the portfolio may be about 3% ahead of the S&P since the start. That is retained as a user-reported hypothesis, not a measured claim. The latest month spread is -0.38 percentage points versus SPY, and the latest all-time open-position spread is -0.16 percentage points, so the available evidence does not support saying that the system is consistently beating the benchmark.
 
 ## What the observations suggest
 
@@ -13,6 +13,7 @@ Jeremy believes the portfolio may be about 3% ahead of the S&P since the start. 
 - On 2026-07-30, all reported periods were zero versus zero. This is treated as neutral or low-information rather than as evidence of skill.
 - On 2026-08-03, the month spread was positive by 0.22 percentage points, but the day and week spreads were negative.
 - On 2026-08-05, the portfolio was up 1.81% for the month versus SPY at 2.95%, a -1.14 percentage-point spread. This is the clearest current warning against overclaiming success.
+- On 2026-08-10, the latest report showed Fidelity behind SPY by 0.31 points for the day, 1.38 points for the latest five-session week, 0.38 points for the latest 21-session month, and 0.16 points for the open-position comparison since 2026-06-12. The report excluded the expected contribution until arrival is confirmed.
 
 ## Why the system changed
 
@@ -20,7 +21,7 @@ The operating rules became more catalyst-first and exhaustion-aware after the sy
 
 ## Latest operator decision
 
-On 2026-08-08, Jeremy confirmed that SNOW had been added to Cash App. DXCM was not purchased because the $150 trade limit was reached. This makes SNOW current user-confirmed state and DXCM an unbought candidate for future comparison, not a holding. The public record contains no account value, cost basis, recipient, or order identifier.
+On 2026-08-08, Jeremy confirmed that SNOW had been added to Cash App. DXCM was not purchased because the $150 trade limit was reached. The 2026-08-10 private report keeps an expected contribution outside buying power until arrival is confirmed, shows three standalone ETF reviews when no ETF fails its replacement gate, and compares GWRE and VEEV against SNOW. YUMC is excluded from the candidate universe. The public record contains no account value, cost basis, recipient, or order identifier.
 
 ## What must be measured next
 

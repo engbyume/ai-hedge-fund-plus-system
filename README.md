@@ -6,9 +6,9 @@ This repository is the system: context conventions, public tool links, optional 
 
 ## What this is
 
-The project combines public Agent Skills patterns, context-layer ideas, Chronos, TimesFM, Kronos, broad-market research, catalyst-first security review, momentum-exhaustion checks, macro risk haircuts, portfolio constraints, and scheduled report operations. The combination and operating rules are Jeremy's personal design.
+The project combines public Agent Skills patterns, context-layer ideas, Kronos forecast evidence, broad-market research, catalyst-first security review, momentum-exhaustion checks, macro risk haircuts, portfolio constraints, and scheduled report operations. The combination and operating rules are Jeremy's personal design.
 
-It is inspired by public Atlan context-layer material, but it is not an Atlan product, official Atlan skill, or affiliated implementation. It is also not affiliated with Amazon, Google, Anthropic, GitHub, or any linked model or data provider.
+It uses the local `atlan-scale` name for the context-layer skill, but it is not an official vendor product or affiliated implementation. It is also not affiliated with any linked model, data, broker, or delivery provider.
 
 This is an educational research system, not financial advice. It does not place trades, send email, or install software by itself. Any external action requires explicit operator configuration and confirmation.
 
@@ -72,11 +72,9 @@ The context repo is the control plane. It records source authority, operator pre
 See [`integrations/tools.md`](integrations/tools.md) for the complete link and license map. The core public references are:
 
 - [Agent Skills](https://agentskills.io/), the open folder-based skill format.
-- [Atlan context-layer overview](https://docs.atlan.com/get-started/what-is-atlan) and [public context-layer scaling notes](https://atlan.com/know/ai-agent/how-to-scale-agent-context-layer/).
-- [Amazon Chronos](https://github.com/amazon-science/chronos-forecasting) and its [research paper](https://arxiv.org/abs/2403.07815).
-- [Google Research TimesFM](https://github.com/google-research/timesfm).
-- [Kronos](https://github.com/shiyu-coder/Kronos), a public financial K-line foundation model.
+- [Kronos](https://github.com/shiyu-coder/Kronos), the financial K-line forecast provider used by the private runtime when available.
 - [The upstream AI Hedge Fund project](https://github.com/virattt/ai-hedge-fund), used as a public reference, not vendored.
+- [yfinance](https://github.com/ranaroussi/yfinance), [SnapTrade](https://snaptrade.com/), and [AgentMail](https://agentmail.to/), the market-data, broker-readback, and delivery providers used by the private runtime when enabled.
 
 ## Research principles
 

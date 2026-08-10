@@ -14,3 +14,7 @@ date,period,portfolio_return_pct,benchmark_return_pct,spread_pp,market_direction
 2026-08-05,day,0.38,-0.20,0.58,down,machine_observed,trial_start_reported_not_archived,Portfolio held up on the day
 2026-08-05,week,1.40,1.80,-0.40,up,machine_observed,trial_start_reported_not_archived,Portfolio lagged weekly benchmark
 2026-08-05,month,1.81,2.95,-1.14,up,machine_observed,trial_start_reported_not_archived,Latest archived checkpoint shows no consistent edge
+2026-08-10,day,0.30,0.61,-0.31,up,machine_observed,open_position_report,Latest private report; market close through 2026-08-07; close-to-close return; pending contribution excluded; costs and drawdown not confirmed
+2026-08-10,week,2.13,3.51,-1.38,up,machine_observed,open_position_report,Latest five trading-session close-to-close return; market close through 2026-08-07; pending contribution excluded; costs and drawdown not confirmed
+2026-08-10,month,2.49,2.87,-0.38,up,machine_observed,open_position_report,Latest 21 trading-session close-to-close return; market close through 2026-08-07; pending contribution excluded; costs and drawdown not confirmed
+2026-08-10,all_time,4.09,4.25,-0.16,up,machine_observed,open_position_report,Open-position mark-to-market since 2026-06-12; market close through 2026-08-07; pending contribution excluded; realized proceeds, costs, and drawdown not confirmed
