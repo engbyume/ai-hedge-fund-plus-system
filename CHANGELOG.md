@@ -10,6 +10,11 @@
 - Verified a no-send report preview with zero proposed actions. No live email, trade, broker write, scheduler mutation, or model promotion occurred in this verification.
 - Documented that external email delivery remains unverified without an AgentMail sent-label readback.
 
+### 2026-09-22 - Read-only AgentMail status verification
+
+- A read-only metadata lookup found one `sent`-labeled report at the same time as the stored 20:31 report archive, with the configured recipient matching.
+- The message body was not retrieved, so exact content matching remains unverified. No email was sent by this task.
+
 ### 2026-08-08 - Public repository bootstrap
 
 - Created the personal `ai-hedge-fund-plus-system` publication layer.

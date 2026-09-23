@@ -2,6 +2,12 @@
 
 This log records what the system advised, what Jeremy chose, why the system changed, and what remains unproven. It separates advice from execution and outcome.
 
+## 2026-09-22 - Scheduled report sent-label readback
+
+- Read-only AgentMail metadata found one `sent`-labeled report at 20:31 local, matching the timestamp of the stored live-candidate report and the configured recipient.
+- The message body was not retrieved, so its content has not been compared with the archived render.
+- This was readback of the existing scheduled run. No email was sent by this task, and the scheduler was not changed.
+
 ## 2026-09-22 - Historical gate and report-delivery verification
 
 - Evidence: the approved working-list feasibility upper bound found 89 eligible decisions of 111. Maximum consecutive feasible runs were 5 defensive, 4 growth-like, 6 oil-like, and 3 transition. The strict five-week gate remains false.
