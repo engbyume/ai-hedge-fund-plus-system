@@ -6,6 +6,12 @@ Use one benchmark, one declared start date, one return method, and consistent tr
 
 The public table reports percentage returns and spreads only. `spread = portfolio return - benchmark return` for the same period.
 
+## Historical selector accuracy
+
+For historical selection diagnostics, exact-pair hit rate is `qualified windows / evaluated windows`. A window qualifies only when both distinct non-proxy picks land in the realized full-market top 30. Preserve the Cash App top-65 prefilter, strict prior-label cutoff, route and market-type checks, and exact-two selection.
+
+Compare candidate accuracy only on identical decision and label sessions. Report route-level results and the longest consecutive qualified streak. This diagnostic is separate from portfolio returns and cannot replace the five-consecutive-week promotion gate.
+
 ## Evidence labels
 
 - `machine_observed`: extracted from an archived report or deterministic run.

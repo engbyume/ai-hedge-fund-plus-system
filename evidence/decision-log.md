@@ -2,6 +2,15 @@
 
 This log records what the system advised, what Jeremy chose, why the system changed, and what remains unproven. It separates advice from execution and outcome.
 
+## 2026-09-22 - Historical gate and report-delivery verification
+
+- Evidence: the approved working-list feasibility upper bound found 89 eligible decisions of 111. Maximum consecutive feasible runs were 5 defensive, 4 growth-like, 6 oil-like, and 3 transition. The strict five-week gate remains false.
+- Accuracy method: count a qualified decision only when both distinct non-proxy picks land in the realized full-market top 30. On the shared 106-window slice, protected v14 scored 3/106. The stable-support diagnostic scored 2/106 causal, 3/106 global, and 2/106 state, with maximum streaks of 1. No route improved the baseline.
+- System change: report metadata now distinguishes preview, provider acknowledgement, and delivery failure. Dry-run mode preserves the same-day dispatch marker and suppresses auto-heal state changes and failure email.
+- Verification: the no-send render recorded `dry_run=true`, `delivery_status=previewed`, zero delivery attempts, and zero proposed actions. Isolated wrapper tests left the dispatch marker and auto-heal state unchanged. Focused automation tests passed 35 tests, and targeted private prototype tests passed 24 tests.
+- Delivery status: a prior attempt logged a provider connection error. The later live-candidate report did not include an external sent-label readback, so delivery remains unverified. This verification sent no email and made no trade, broker write, scheduler change, or promotion.
+- Limitation: the dry-run reported an unavailable optional local forecast backend. The render proves report generation only. It does not prove a fresh model forecast or investment return.
+
 ## 2026-07-11 - Trial start reported, baseline not archived
 
 - Advice received: begin a two-month benchmark trial and compare the custom portfolio with the S&P 500 proxy.

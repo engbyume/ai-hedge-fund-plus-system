@@ -1,5 +1,17 @@
 # Progress narrative
 
+## Status as of 2026-09-22
+
+The latest aligned historical boundary contains 123 windows and 111 evaluated decisions through label session 2026-09-18. Both realized top-30 members were in the current 677-symbol working list for 89 decisions. This is decision-level feasibility, not proof of historical platform availability. No dated Cash App membership ledger was found, and the expanded 1,050-symbol manifest remains unverified.
+
+The maximum consecutive feasible runs were 5 defensive, 4 growth-like, 6 oil-like, and 3 transition windows. The exact five-week gate remains false because growth-like and transition cannot sustain five consecutive feasible decisions on this boundary.
+
+For accuracy, the exact-pair hit rate counts a window only when both distinct non-proxy picks reach the realized full-market top 30. On the 106 shared decision-label windows, protected v14 recorded 3 hits. The stable-support diagnostic recorded 2 causal, 3 global, and 2 state-route hits, with maximum streaks of 1. The global route tied v14; no route improved it. The additional five decisions through the 2026-09-18 label added no qualified pairs. No candidate was promoted.
+
+The canonical report generator completed a no-send preview with `dry_run=true`, `delivery_status=previewed`, and zero proposed actions. This verification made no AgentMail call. A previous delivery log contains connection errors after retries, while a later live-candidate archive has no sent-label readback. External delivery remains unverified. The preview also reported that an optional local forecast backend could not load; its output is not treated as fresh model-accuracy evidence.
+
+Focused verification passed 35 canonical automation tests and 24 targeted private prototype tests. Shell syntax and Python compilation passed. The isolated dry-run wrapper checks preserved the dispatch marker and auto-heal state.
+
 ## Status as of 2026-08-10
 
 The latest redacted machine observation is the 2026-08-10 report, using market closes through 2026-08-07. The experiment's own report text says a two-month trial began on 2026-07-11, but a separately archived 2026-07-11 baseline is not present in the public evidence. The all-time figure is therefore an open-position comparison from the first confirmed position date, not a verified trial-start result.

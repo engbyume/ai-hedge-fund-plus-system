@@ -27,6 +27,12 @@ The public evidence is deliberately conservative:
 - The latest archived checkpoint, 2026-08-05, shows a month spread of -1.14 percentage points versus SPY. That is evidence that the system was not consistently outperforming at that checkpoint.
 - The evidence table contains redacted percentage returns only. It excludes account balances, order values, credentials, private emails, raw reports, and broker identifiers.
 
+### Historical selector research
+
+This is a separate research record, not portfolio performance evidence. The exact-pair hit rate is the share of evaluated decision windows where both distinct non-proxy picks land in the realized full-market top 30. On the 106 decision-label pairs shared with protected v14, v14 recorded 3 qualified pairs and the stable-support diagnostic recorded 2 causal, 3 global, and 2 state-route pairs. The diagnostic tied v14 on the global route and did not improve the baseline.
+
+The latest feasibility audit found at least two approved working-list names for 89 of 111 decision windows. Maximum consecutive feasible runs were 5 defensive, 4 growth-like, 6 oil-like, and 3 transition windows. The strict five-week gate therefore remains false for growth-like and transition states on this boundary. The working list is not a dated record of historical platform membership, and an expanded manifest remains unverified.
+
 Read [the evidence methodology](docs/evidence-methodology.md), [the checkpoint table](evidence/weekly-checkpoints.csv), and [the progress narrative](evidence/progress.md) before drawing conclusions.
 
 ## Quick start

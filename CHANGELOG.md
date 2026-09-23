@@ -2,6 +2,14 @@
 
 ## Unreleased
 
+### 2026-09-22 - Historical feasibility and no-send automation hardening
+
+- Defined and published the exact-pair hit-rate metric separately from portfolio returns. On the shared 106-window baseline slice, no tested route improved on protected v14.
+- Recorded the current decision feasibility ceiling: 89 of 111 decisions, with growth-like and transition maximum feasible runs below five.
+- Made report archives record preview, provider acknowledgement, or failure. A dry run now leaves the same-day dispatch marker unchanged and skips failure email and auto-heal state changes.
+- Verified a no-send report preview with zero proposed actions. No live email, trade, broker write, scheduler mutation, or model promotion occurred in this verification.
+- Documented that external email delivery remains unverified without an AgentMail sent-label readback.
+
 ### 2026-08-08 - Public repository bootstrap
 
 - Created the personal `ai-hedge-fund-plus-system` publication layer.
