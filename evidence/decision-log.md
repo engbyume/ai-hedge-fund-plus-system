@@ -2,6 +2,13 @@
 
 This log records what the system advised, what Jeremy chose, why the system changed, and what remains unproven. It separates advice from execution and outcome.
 
+## 2026-09-25 - No-send delivery and Cash App verification gate
+
+- A direct no-send render recorded `previewed`, zero delivery attempts, and zero proposed orders. It did not call AgentMail.
+- The rendered report identified the Cash App holdings snapshot as stale and required manual availability confirmation for the fallback watchlist. Live delivery now returns a blocked status before AgentMail when model-card availability is not confirmed.
+- Focused mocked tests passed 36 cases, including sent-label readback, no-resend behavior, preview safety, and the Cash App delivery gate. Both wrapper shell syntax checks passed.
+- No live email, trade, broker write, scheduler change, or promotion occurred. Optional Capitol Trades data was rate-limited and Kronos could not load; neither is treated as model or accuracy evidence.
+
 ## 2026-09-25 - Alternative data-source billing gate
 
 - Official Financial Datasets pricing and terms state that each API request is billable; the pay-as-you-go option is $20 for 1,000 requests.

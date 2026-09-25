@@ -10,6 +10,8 @@ The aligned feature cache still ends at label session 2026-09-18. The 2026-09-25
 
 An alternative-source review found that Financial Datasets bills every API request; its pay-as-you-go option is $20 per 1,000 requests. The current account plan and remaining allowance were not verified, and no request was made. This review adds no price-coverage evidence and does not resolve the September 22 or HUBB gaps.
 
+A direct no-send report preview after delivery-gate hardening recorded `delivery_status=previewed`, zero delivery attempts, zero proposed orders, and a 38,762-byte HTML render. The preview labeled the Cash App snapshot stale and marked model-card availability as unverified; a live delivery now blocks until the confirmation gate passes. Thirty-six focused mocked tests and both wrapper syntax checks passed. A Capitol Trades request returned HTTP 429 and Kronos did not load because Torch was unavailable; neither result supports an accuracy claim. No email was sent.
+
 ## Status as of 2026-09-22
 
 The latest aligned historical boundary contains 123 windows and 111 evaluated decisions through label session 2026-09-18. Both realized top-30 members were in the current 677-symbol working list for 89 decisions. This is decision-level feasibility, not proof of historical platform availability. No dated Cash App membership ledger was found, and the expanded 1,050-symbol manifest remains unverified.

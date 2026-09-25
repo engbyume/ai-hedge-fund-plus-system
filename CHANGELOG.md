@@ -7,6 +7,7 @@
 - Appended 9,702 fixed-cohort bars through the 2026-09-24 session and verified SQLite integrity.
 - Recorded incomplete September 22 coverage and a same-provider retry that added no rows. Deferred aligned feature-cache rebuilding and selector replay because the full daily boundary is not yet verified.
 - No prediction-accuracy claim, candidate promotion, trade, broker write, email send, or scheduler change was made.
+- Reran a direct no-send report preview after delivery-gate hardening. It recorded `previewed`, zero delivery attempts, and zero proposed orders; live delivery remains blocked while model-card Cash App availability is unverified. Thirty-six focused tests and both wrapper syntax checks passed.
 
 ### 2026-09-22 - Historical feasibility and no-send automation hardening
 
