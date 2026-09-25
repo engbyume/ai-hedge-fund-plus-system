@@ -42,6 +42,12 @@ This log records what the system advised, what Jeremy chose, why the system chan
 - HistoricalData.net describes its full adjusted archive as a one-time purchase. Its no-account endpoints expose product metadata and a few fixed sample rows, not the purchased current dataset. No purchase or data request occurred.
 - Decision: neither option meets the existing no-account, no-cost requirement for resolving the historical-universe gap. Keep authenticated access and purchase gates closed. This bounded documentation screen does not establish that no other provider exists.
 
+## 2026-09-25 - Dated-manifest ticker-alias audit
+
+- A read-only comparison found 3,754 normalized manifest symbols and 3,282 distinct symbols in the main price store; 3,214 symbols were shared and 540 manifest symbols were absent from the store.
+- For those 540 missing names, slash/dash and dot/dash punctuation variants produced zero matches among the main-store symbols.
+- Decision: simple punctuation aliases do not explain the current missing set. This does not establish that a provider lacks data for every missing symbol, and it does not explain the separate September 22 daily-session gap. No provider request or database write occurred.
+
 ## 2026-09-25 - Price boundary refresh and coverage gate
 
 - The append-only refresh added 9,702 bars through the 2026-09-24 session for the fixed 3,154-symbol cohort. SQLite integrity passed, and all 2,132,002 pre-existing rows through 2026-09-18 remain present.
