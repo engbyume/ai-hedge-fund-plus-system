@@ -1,5 +1,11 @@
 # Progress narrative
 
+## Post-backfill update, 2026-09-25 08:40 Central
+
+The existing no-write Yahoo probe found usable history for 36 of 540 manifest symbols with no main-store prices. A staged rerun returned 18,775 adjusted bars. The append preserved all 2,141,704 previous main-store rows, and the dated-store rebuild preserved all 2,106,844 previous rows. The main store now has 2,160,479 bars across 3,318 symbols. The dated store now has 2,125,619 bars across 3,250 symbols and 685 sessions through September 24. The 18,775 new bars passed source/content-hash checks.
+
+The dynamic September 18 baseline is now 3,182 symbols. September 22 has 271/3,182 rows, and September 24 has 3,181/3,182. The earlier status below records the pre-backfill 3,154-symbol boundary and remains as historical evidence. September 22 is still incomplete, and the September 25 closing label is not available at this morning check. No feature-cache rebuild, selector replay, accuracy claim, or candidate promotion was made.
+
 ## Status as of 2026-09-25
 
 The fixed-cohort price database was refreshed through the 2026-09-24 session. The refresh added 9,702 bars across 3,154 baseline symbols. The earlier rows through 2026-09-18 were preserved, and SQLite integrity passed.

@@ -54,6 +54,13 @@ This log records what the system advised, what Jeremy chose, why the system chan
 - Re-read both SQLite stores after the probe. The main store remained at 2,141,704 bars and the dated store at 2,106,844; both integrity checks returned `ok`. No probe results were persisted.
 - Decision: treat the returned bars as an ingestion lead only. Per-symbol completeness and the other 504 results remain unverified. Any backfill must use the existing append-only path with isolated-candidate and prior-row parity checks. Keep feature rebuilding and replay closed until the separate daily gap and aligned-label gates pass. No paid request, account access, database write, or promotion occurred.
 
+## 2026-09-25 - Backfill of 36 unpriced manifest symbols
+
+- Re-ran the existing free Yahoo adjusted-price helper over the 540 manifest symbols that had no main-store history. The staged run returned 18,775 bars for 36 symbols across six batches.
+- The staged database passed integrity, all 2,141,704 prior main-store rows matched exactly, and the 18,775 new rows had `yfinance.adjusted_close` provenance and valid content hashes. They were appended with `INSERT OR IGNORE`, so prior rows were not overwritten.
+- Rematerialized the dated store from the main store. All 2,106,844 previous dated rows matched exactly; the refreshed store has 2,125,619 bars across 3,250 symbols and 685 sessions through September 24.
+- The new 36 symbols expanded the dynamic September 18 baseline from 3,154 to 3,182. September 22 coverage is 271/3,182 and September 24 is 3,181/3,182. The September 22 gap remains. Keep feature-cache rebuilding and replay closed until daily coverage and the complete aligned label are ready. No candidate or v14 promotion occurred.
+
 ## 2026-09-25 - Price boundary refresh and coverage gate
 
 - The append-only refresh added 9,702 bars through the 2026-09-24 session for the fixed 3,154-symbol cohort. SQLite integrity passed, and all 2,132,002 pre-existing rows through 2026-09-18 remain present.
