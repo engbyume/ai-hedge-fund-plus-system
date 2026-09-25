@@ -22,6 +22,8 @@ A follow-up documentation-only screen found that StashGamma's free daily OHLCV A
 
 A separate read-only ticker-alias audit compared the 3,754-symbol dated manifest union with the 3,282 distinct symbols in the main store. The sets shared 3,214 symbols; 540 manifest symbols were absent from the store. Slash/dash and dot/dash variants of those missing names produced zero matches in the main-store symbols. This rules out only simple punctuation aliases, not provider-wide unavailability, and does not resolve the September 22 session gap. No API call or database write occurred.
 
+A six-batch no-write historical Yahoo probe covered those 540 unpriced manifest symbols from 2024-01-02 through the 2026-09-24 close. It returned 18,775 adjusted-price bars for 36 symbols. The remaining 504 returned no bars in this probe, but provider-wide unavailability is not inferred. Both databases passed post-probe integrity checks with unchanged row counts, and no result was persisted. Any future ingestion must preserve existing rows and provenance; the separate September 22 daily gap and aligned-label gate still block replay.
+
 A read-only AgentMail list returned one Sent-labeled message at 20:36:05 Central with the configured recipient, one second after the September 24 archive timestamp. The archive metadata records `provider_acknowledged`, one attempt, and verification not checked. The list returned its 100-message limit; the message body and message ID were not compared with the archive, so exact content matching remains unverified. No email was sent by this task.
 
 ## Status as of 2026-09-22

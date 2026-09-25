@@ -48,6 +48,12 @@ This log records what the system advised, what Jeremy chose, why the system chan
 - For those 540 missing names, slash/dash and dot/dash punctuation variants produced zero matches among the main-store symbols.
 - Decision: simple punctuation aliases do not explain the current missing set. This does not establish that a provider lacks data for every missing symbol, and it does not explain the separate September 22 daily-session gap. No provider request or database write occurred.
 
+## 2026-09-25 - No-write Yahoo historical probe for unpriced manifest symbols
+
+- Ran the existing adjusted-price helper in six sequential batches over the 540 normalized manifest symbols absent from the main store, for 2024-01-02 through the 2026-09-24 close. It returned non-empty bars for 36 symbols and 18,775 bars total.
+- Re-read both SQLite stores after the probe. The main store remained at 2,141,704 bars and the dated store at 2,106,844; both integrity checks returned `ok`. No probe results were persisted.
+- Decision: treat the returned bars as an ingestion lead only. Per-symbol completeness and the other 504 results remain unverified. Any backfill must use the existing append-only path with isolated-candidate and prior-row parity checks. Keep feature rebuilding and replay closed until the separate daily gap and aligned-label gates pass. No paid request, account access, database write, or promotion occurred.
+
 ## 2026-09-25 - Price boundary refresh and coverage gate
 
 - The append-only refresh added 9,702 bars through the 2026-09-24 session for the fixed 3,154-symbol cohort. SQLite integrity passed, and all 2,132,002 pre-existing rows through 2026-09-18 remain present.
