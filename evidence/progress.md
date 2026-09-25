@@ -18,6 +18,8 @@ The source-mapping check found 3,754 symbols in the dated proxy, 3,214 stored sy
 
 Official provider documentation identifies Alpaca Basic as a free candidate for authenticated historical SIP queries older than 15 minutes. Its multi-symbol historical-bars endpoint supports corporate-action adjustment, but access requires API credentials and no account or request was made. Tiingo's free tier is limited to 500 unique symbols per month; Alpha Vantage's standard free service is limited to 25 requests per day. Stooq's verification gate was not bypassed, and Financial Datasets remains billable per request. Operator direction is pending on whether to use an existing Alpaca Basic account or authorize free setup. No feature cache rebuild, selector replay, or promotion occurred.
 
+A read-only AgentMail list returned one Sent-labeled message at 20:36:05 Central with the configured recipient, one second after the September 24 archive timestamp. The archive metadata records `provider_acknowledged`, one attempt, and verification not checked. The list returned its 100-message limit; the message body and message ID were not compared with the archive, so exact content matching remains unverified. No email was sent by this task.
+
 ## Status as of 2026-09-22
 
 The latest aligned historical boundary contains 123 windows and 111 evaluated decisions through label session 2026-09-18. Both realized top-30 members were in the current 677-symbol working list for 89 decisions. This is decision-level feasibility, not proof of historical platform availability. No dated Cash App membership ledger was found, and the expanded 1,050-symbol manifest remains unverified.

@@ -16,6 +16,13 @@ This log records what the system advised, what Jeremy chose, why the system chan
 - The promoted store now contains 2,106,844 bars across 685 sessions and 3,214 symbols. September 22 remains incomplete at 243/3,154, so the feature cache was not rebuilt and no selector replay was run.
 - No trade, broker write, email send, scheduler change, paid API request, purchase, or candidate or v14 promotion occurred.
 
+## 2026-09-25 - Sent-label readback for scheduled report
+
+- The local September 24 report archive is timestamped 20:36:04 Central and records `provider_acknowledged`, one attempt, and `delivery_verification=not_checked`.
+- A read-only AgentMail list returned one `sent`-labeled message at 20:36:05 Central with the configured recipient, one second after the archive timestamp.
+- The list reached its 100-message limit. No message body was retrieved, and the message ID was not compared with the archive. This confirms a matching sent-labeled message in the scheduled window but does not prove exact report-content matching.
+- No email was sent by this task, and the scheduler was not changed.
+
 ## 2026-09-25 - No-send delivery and Cash App verification gate
 
 - A direct no-send render recorded `previewed`, zero delivery attempts, and zero proposed orders. It did not call AgentMail.
