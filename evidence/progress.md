@@ -1,5 +1,13 @@
 # Progress narrative
 
+## Status as of 2026-09-25
+
+The fixed-cohort price database was refreshed through the 2026-09-24 session. The refresh added 9,702 bars across 3,154 baseline symbols. The earlier rows through 2026-09-18 were preserved, and SQLite integrity passed.
+
+Coverage is incomplete for one scheduled session: 2026-09-22 has 243 of 3,154 rows. A bounded same-provider retry returned no new rows. The 2026-09-24 session has 3,153 of 3,154 rows. Official Nasdaq and NYSE calendars show no scheduled closure on September 22. Treat this as an unresolved source-coverage gap, not as evidence that the session was closed.
+
+The aligned feature cache still ends at label session 2026-09-18. The 2026-09-25 closing label is not yet available, and the intervening daily coverage is incomplete. No feature cache rebuild, selector replay, accuracy claim, or candidate promotion was made from this refresh.
+
 ## Status as of 2026-09-22
 
 The latest aligned historical boundary contains 123 windows and 111 evaluated decisions through label session 2026-09-18. Both realized top-30 members were in the current 677-symbol working list for 89 decisions. This is decision-level feasibility, not proof of historical platform availability. No dated Cash App membership ledger was found, and the expanded 1,050-symbol manifest remains unverified.

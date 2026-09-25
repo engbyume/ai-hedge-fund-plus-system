@@ -2,6 +2,13 @@
 
 This log records what the system advised, what Jeremy chose, why the system changed, and what remains unproven. It separates advice from execution and outcome.
 
+## 2026-09-25 - Price boundary refresh and coverage gate
+
+- The append-only refresh added 9,702 bars through the 2026-09-24 session for the fixed 3,154-symbol cohort. SQLite integrity passed, and all 2,132,002 pre-existing rows through 2026-09-18 remain present.
+- Coverage was incomplete on September 22: 243 of 3,154 cohort symbols had rows. A bounded same-provider retry added zero rows. The September 24 session has 3,153 of 3,154 rows. Official exchange calendars do not list a September 22 closure.
+- Decision: do not rebuild aligned features or run the selector with this incomplete daily boundary. Preserve the exact full-market top-30 target, prior-label cutoff, route and market-type gates, and protected v14.
+- No prediction-accuracy improvement is inferred. No candidate was promoted, and no trade, broker write, email send, or scheduler change occurred.
+
 ## 2026-09-22 - Scheduled report sent-label readback
 
 - Read-only AgentMail metadata found one `sent`-labeled report at 20:31 local, matching the timestamp of the stored live-candidate report and the configured recipient.
@@ -14,7 +21,7 @@ This log records what the system advised, what Jeremy chose, why the system chan
 - Accuracy method: count a qualified decision only when both distinct non-proxy picks land in the realized full-market top 30. On the shared 106-window slice, protected v14 scored 3/106. The stable-support diagnostic scored 2/106 causal, 3/106 global, and 2/106 state, with maximum streaks of 1. No route improved the baseline.
 - System change: report metadata now distinguishes preview, provider acknowledgement, and delivery failure. Dry-run mode preserves the same-day dispatch marker and suppresses auto-heal state changes and failure email.
 - Verification: the no-send render recorded `dry_run=true`, `delivery_status=previewed`, zero delivery attempts, and zero proposed actions. Isolated wrapper tests left the dispatch marker and auto-heal state unchanged. Focused automation tests passed 35 tests, and targeted private prototype tests passed 24 tests.
-- Delivery status: a prior attempt logged a provider connection error. The later live-candidate report did not include an external sent-label readback, so delivery remains unverified. This verification sent no email and made no trade, broker write, scheduler change, or promotion.
+- Delivery status at this checkpoint: a prior attempt logged a provider connection error, and the live-candidate archive did not contain a sent-label readback. The later read-only metadata lookup is recorded above and confirms one sent-labeled report with a matching archive time and configured recipient; its body remains unverified. This verification sent no email and made no trade, broker write, scheduler change, or promotion.
 - Limitation: the dry-run reported an unavailable optional local forecast backend. The render proves report generation only. It does not prove a fresh model forecast or investment return.
 
 ## 2026-07-11 - Trial start reported, baseline not archived
