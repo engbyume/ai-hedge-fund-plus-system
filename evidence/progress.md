@@ -8,6 +8,8 @@ Coverage is incomplete for one scheduled session: 2026-09-22 has 243 of 3,154 ro
 
 The aligned feature cache still ends at label session 2026-09-18. The 2026-09-25 closing label is not yet available, and the intervening daily coverage is incomplete. No feature cache rebuild, selector replay, accuracy claim, or candidate promotion was made from this refresh.
 
+An alternative-source review found that Financial Datasets bills every API request; its pay-as-you-go option is $20 per 1,000 requests. The current account plan and remaining allowance were not verified, and no request was made. This review adds no price-coverage evidence and does not resolve the September 22 or HUBB gaps.
+
 ## Status as of 2026-09-22
 
 The latest aligned historical boundary contains 123 windows and 111 evaluated decisions through label session 2026-09-18. Both realized top-30 members were in the current 677-symbol working list for 89 decisions. This is decision-level feasibility, not proof of historical platform availability. No dated Cash App membership ledger was found, and the expanded 1,050-symbol manifest remains unverified.

@@ -2,6 +2,12 @@
 
 This log records what the system advised, what Jeremy chose, why the system changed, and what remains unproven. It separates advice from execution and outcome.
 
+## 2026-09-25 - Alternative data-source billing gate
+
+- Official Financial Datasets pricing and terms state that each API request is billable; the pay-as-you-go option is $20 for 1,000 requests.
+- The current account plan and remaining request allowance are unverified. No API request or purchase was made.
+- Decision: keep the price database unchanged and do not use this source until an authorized allowance or spending instruction is confirmed. This review does not resolve the September 22 coverage gap or the missing HUBB row.
+
 ## 2026-09-25 - Price boundary refresh and coverage gate
 
 - The append-only refresh added 9,702 bars through the 2026-09-24 session for the fixed 3,154-symbol cohort. SQLite integrity passed, and all 2,132,002 pre-existing rows through 2026-09-18 remain present.
