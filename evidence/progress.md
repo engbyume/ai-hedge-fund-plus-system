@@ -18,6 +18,8 @@ The source-mapping check found 3,754 symbols in the dated proxy, 3,214 stored sy
 
 Official provider documentation identifies Alpaca Basic as a free candidate for authenticated historical SIP queries older than 15 minutes. Its multi-symbol historical-bars endpoint supports corporate-action adjustment, but access requires API credentials and no account or request was made. Tiingo's free tier is limited to 500 unique symbols per month; Alpha Vantage's standard free service is limited to 25 requests per day. Stooq's verification gate was not bypassed, and Financial Datasets remains billable per request. Operator direction is pending on whether to use an existing Alpaca Basic account or authorize free setup. No feature cache rebuild, selector replay, or promotion occurred.
 
+A follow-up documentation-only screen found that StashGamma's free daily OHLCV API requires account sign-in and an API key. HistoricalData.net sells the full adjusted archive; unauthenticated access returns metadata and a few fixed sample rows only. Neither option supplies no-account, no-cost current history for the remaining gap. No provider endpoint was called, no account was created, and no purchase occurred. This screen is bounded and is not an exhaustive provider survey.
+
 A read-only AgentMail list returned one Sent-labeled message at 20:36:05 Central with the configured recipient, one second after the September 24 archive timestamp. The archive metadata records `provider_acknowledged`, one attempt, and verification not checked. The list returned its 100-message limit; the message body and message ID were not compared with the archive, so exact content matching remains unverified. No email was sent by this task.
 
 ## Status as of 2026-09-22

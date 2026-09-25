@@ -36,6 +36,12 @@ This log records what the system advised, what Jeremy chose, why the system chan
 - The current account plan and remaining request allowance are unverified. No API request or purchase was made.
 - Decision: keep the price database unchanged and do not use this source until an authorized allowance or spending instruction is confirmed. This review does not resolve the September 22 coverage gap or the missing HUBB row.
 
+## 2026-09-25 - Follow-up no-account historical-price source screen
+
+- Official StashGamma pages advertise free daily OHLCV history but require account sign-in and an API key. No account was created and no endpoint was called.
+- HistoricalData.net describes its full adjusted archive as a one-time purchase. Its no-account endpoints expose product metadata and a few fixed sample rows, not the purchased current dataset. No purchase or data request occurred.
+- Decision: neither option meets the existing no-account, no-cost requirement for resolving the historical-universe gap. Keep authenticated access and purchase gates closed. This bounded documentation screen does not establish that no other provider exists.
+
 ## 2026-09-25 - Price boundary refresh and coverage gate
 
 - The append-only refresh added 9,702 bars through the 2026-09-24 session for the fixed 3,154-symbol cohort. SQLite integrity passed, and all 2,132,002 pre-existing rows through 2026-09-18 remain present.
