@@ -2,6 +2,20 @@
 
 This log records what the system advised, what Jeremy chose, why the system changed, and what remains unproven. It separates advice from execution and outcome.
 
+## 2026-09-25 05:17 Central - Historical price-source and store-preservation gate
+
+- A fresh read-only audit confirmed the main price store reaches 2026-09-24 with 2,141,704 bars and SQLite integrity `ok`; the dated historical-universe store remains at 2026-08-24 with 2,040,294 bars and integrity `ok`.
+- Saved metadata for the September 22 retry records 32 slices over 3,154 symbols, 243 returned symbols, and zero inserted bars. A 20-symbol sample of missing rows returned no Yahoo bars, while five existing-row controls returned five bars. A separate direct-history probe returned no bars for three sampled missing names while its control succeeded. These probes did not write to either store and do not establish provider-wide unavailability.
+- The store materializer constructs a new temporary database and replaces the existing derived store from the narrower source. It was not run because the overlap is not proven and replacement could remove rows that are absent from the source.
+- Official provider pages list a free Alpaca Basic plan and historical SIP access for requests ending more than 15 minutes in the past, but API authentication is required. No account setup or API request occurred. The free Tiingo and Alpha Vantage limits are too low for the full cohort. No data-source change, feature rebuild, replay, purchase, or promotion occurred.
+
+## 2026-09-25 - Dated historical-universe store refresh
+
+- The source manifest hash matched the dated store metadata, and every existing dated-store row was present in the main store with matching close, volume, source, fetch timestamp, and content hash.
+- A candidate built in an isolated directory passed SQLite integrity, retained all 2,040,294 previous rows with zero mismatches, and added 66,550 rows through 2026-09-24. A byte-identical backup was retained before atomic promotion.
+- The promoted store now contains 2,106,844 bars across 685 sessions and 3,214 symbols. September 22 remains incomplete at 243/3,154, so the feature cache was not rebuilt and no selector replay was run.
+- No trade, broker write, email send, scheduler change, paid API request, purchase, or candidate or v14 promotion occurred.
+
 ## 2026-09-25 - No-send delivery and Cash App verification gate
 
 - A direct no-send render recorded `previewed`, zero delivery attempts, and zero proposed orders. It did not call AgentMail.

@@ -8,6 +8,9 @@
 - Recorded incomplete September 22 coverage and a same-provider retry that added no rows. Deferred aligned feature-cache rebuilding and selector replay because the full daily boundary is not yet verified.
 - No prediction-accuracy claim, candidate promotion, trade, broker write, email send, or scheduler change was made.
 - Reran a direct no-send report preview after delivery-gate hardening. It recorded `previewed`, zero delivery attempts, and zero proposed orders; live delivery remains blocked while model-card Cash App availability is unverified. Thirty-six focused tests and both wrapper syntax checks passed.
+- Audited no-cost historical-data options and the existing September 22 Yahoo path. Thirty-two saved retry slices covered 3,154 symbols; 243 were returned and zero new bars were inserted. A fresh 20-symbol missing-data sample returned no bars, while five existing-data controls returned five bars. These bounded samples do not prove all missing symbols lack data.
+- Official documentation identifies Alpaca Basic as a possible free historical SIP source for data older than 15 minutes, but it requires authenticated access. Tiingo's free plan is limited to 500 unique symbols per month, and Alpha Vantage's free service to 25 requests per day. No new account, authenticated request, or paid API call occurred.
+- Rematerialized the dated historical-universe store from the main price store only after manifest and full old-row parity checks passed. The refreshed store passes integrity with 2,106,844 bars through September 24; all 2,040,294 prior rows match exactly and 66,550 rows were added. The September 22 gap remains, so no feature rebuild or replay was run.
 
 ### 2026-09-22 - Historical feasibility and no-send automation hardening
 
