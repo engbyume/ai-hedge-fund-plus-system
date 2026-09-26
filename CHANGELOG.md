@@ -2,6 +2,12 @@
 
 ## Unreleased
 
+### 2026-09-25 - Yahoo automated-access boundary
+
+- Added SRC-026 with official regional Yahoo terms evidence and the failed U.S. terms-page retrieval.
+- Recorded the fail-closed operating decision: automated Yahoo collection remains unavailable until express permission or a licensed alternative is verified. This is not a legal conclusion.
+- No Yahoo-derived staged data, candidate picks, or performance claim was published.
+
 ### 2026-09-25 - Price refresh coverage gate
 
 - Appended 9,702 fixed-cohort bars through the 2026-09-24 session and verified SQLite integrity.
